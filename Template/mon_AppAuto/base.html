@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Gestion </title>
+    <link rel="stylesheet" href="{% static 'mon_AppAuto/css/bootstrap.css' %}">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center alert alert-danger">Fonction CRUD basée sur la gestion</h2>
+        {% block content %} {% endblock content %}
+    </div>
+    <script> src="{% static 'mon_AppAuto/js/jquery.js'%}"</script>
+    <script> src="{% static 'mon_AppAuto/js/bootstrap.js'%}"</script>
+    <script> src="{% static 'mon_AppAuto/js/popper.js'%}"</script>
+
+    
+</body>
+</html>

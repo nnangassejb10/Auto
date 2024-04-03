@@ -1,0 +1,16 @@
+{% extends 'mon_AppAuto/base.html'%}
+{% block content %}
+<div class="row">
+    <div class="col-sm-4">
+        <h4 classe="text-center alert alert alert-info"> Ajouter une nouvelle personne </h4>
+            <form action ="" method="POST">
+                {% csrf_token %}<!--pour renforcer la securité de notre form(en protegeant les données qui entreront dans le formulaire)-->
+                {{form.as_p}}
+                <input type="submit" class="btn btn-success" value =  "Ajouter">
+            </form>
+    </div>
+
+</div>
+
+
+{% endblock content %} 
